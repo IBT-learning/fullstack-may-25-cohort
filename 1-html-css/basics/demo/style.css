@@ -1,0 +1,137 @@
+
+
+/* CSS Universal selector */
+
+* {
+    box-sizing: border-box;
+}
+
+/* CSS selector by id */
+#first-p {
+    color: red;
+}
+
+#second-p {
+    color: aqua
+}
+
+/* CSS Selectors by class */
+.box-para {
+    color: green;
+}
+
+/* CSS Selectors by type */
+p {
+    font-weight: 900;
+    color: rgb(38, 0, 255);
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 20px;
+}
+
+div ~ p {
+    font-style: italic;
+}
+
+#heading-1:hover {
+    background-color: red;
+}
+
+.my-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.my-button:hover {
+    background-color: rgb(18, 18, 135);
+    font-weight: 600;
+}
+/* id --> class --> type */
+
+.demo-one {
+    color: #000000;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: line-through;
+    background-color: blue;
+}
+
+.wrapper {
+    background-color: blue;
+    width: 394px;
+    border: 2px solid #000000;
+    position: relative;
+}
+
+.section-box {
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    /* margin: 20px; */
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.section-box h2 {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.section-box p {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.section-one {
+    background-color: #9b2b99;
+    position: relative;
+
+}
+
+.section-one h2 {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+.section-two {
+    background-color: #8f3914;
+}
+
+#demo-one {
+    /* display: none; */
+    /* visibility: hidden;; */
+    position: sticky;
+    top: 200px;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+#heading-1 {
+    margin-top: 70px;
+}
+nav a {
+    color: white;
+    text-decoration: none;;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
