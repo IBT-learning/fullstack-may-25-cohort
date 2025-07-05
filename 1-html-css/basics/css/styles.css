@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+/* h3 {
+    background-color: white;
+    color: black;
+} */
+
+/* h3 {
+    color: green;
+} */
+
+/* .my-box {
+    border: 2px solid brown;
+    background-color: green;
+
+} */
+
+/* #my-demo {
+    font-style: italic; */
+    /* background-color: blue; */
+/* } */
+/* id -> class -> type */
+/* #my-second-h3 {
+    background-color: pink;
+} */
+
+/* p {
+    color: white;
+    background-color: red;
+} */
+
+/* div ~ p {
+    font-size: 36px;
+    text-align: left;
+} */
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid red; */
+}
+
+input:hover {
+    background-color: yellow;
+}
+
+input:focus {
+    font-size: 20px;
+    font-style: italic;
+    color:rgb(216, 22, 112)
+}
+
+.submit-btn {
+    display: block;
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(76, 76, 217);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.submit-btn:hover {
+    background-color: rgb(7, 7, 224);
+    font-size: 600;
+}
+
+a {
+    text-decoration: none;
+    /* font-size: ; */
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.parent-div {
+    position: relative;
+    background-color: rgb(123, 123, 212);
+    /* background-image: url("/workspace.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 50vw;
+    height: 50vh;
+    margin: 40px auto;
+}
+
+.item-one {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* position: ; */
+}
+
+.item-two {
+    background-color: rgb(255, 0, 221);
+}
+
+.item-three {
+    background-color: rgb(74, 150, 32);
+}
+
+.item-four {
+    background-color: rgb(174, 111, 33);
+    padding-left: 20px;
+    border: 1px solid black;
+    /* box-sizing: border-box; */
+}
+
+.item {
+    width: 20%;
+    margin: 10px auto;
+}
+
+/* .box-container {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+} */
+.box-model {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border: 5px solid black;
+    padding: 20px;
+    margin: auto;
+    /* box-sizing: border-box; */
+}
+
+.another-name {
+    /* display: none; */
+    /* visibility: hidden; */
+    position: sticky;
+    top: 200px;
+    right: 0;
+    background-color: red;
+}
+

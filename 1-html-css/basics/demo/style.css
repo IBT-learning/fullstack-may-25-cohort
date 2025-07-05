@@ -15,6 +15,10 @@
     color: aqua
 }
 
+#second-p {
+    color: green;
+}
+
 /* CSS Selectors by class */
 .box-para {
     color: green;
