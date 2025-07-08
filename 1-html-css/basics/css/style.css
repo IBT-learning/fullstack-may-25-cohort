@@ -1,3 +1,19 @@
+*{
+    box-sizing: border-box;
+}
 div > h3{
     color: red;
+}
+
+input[type=text] :hover{
+    border: 2px solid black;
+}  
+
+.box-model{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border: 50px solid black;
+    /* padding: 50px; */
+    margin: 0 auto;
 }
