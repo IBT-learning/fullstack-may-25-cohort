@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav{
+    background-color:blue;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    color: white;
+    margin: 10px;
+    display: inline-block;
+}
+
+.blog{
+    margin: 30px auto;
+    height: 70vh;
+    max-width: 96%;
+    padding: 20px;
+    box-shadow: 0px 7px 8px 5px rgba(0,0,0,0.14);
+-webkit-box-shadow: 0px 7px 8px 5px rgba(0,0,0,0.14);
+-moz-box-shadow: 0px 7px 8px 5px rgba(0,0,0,0.14);
+border-radius: 5px;
+}
+
+hr{
+    width: 100%;
+    padding-left:20px;
+    padding-right: 20px;
+    margin: 40px auto;
+    border-color:rgba(36, 36, 36, 0.108) ;
+}
+
+.blog div{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
