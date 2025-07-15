@@ -1,0 +1,81 @@
+.container {
+    display: grid;
+    grid-template-areas: "content-layout top-layout"
+    "sidebar top-layout"
+    "footer footer"
+    "footer footer";
+    /* grid-template-rows: 50px 50px; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    /* gap: 20px; */
+    /* row-gap: 20px;
+    column-gap: 50px; */
+}
+
+.item {
+    border: 5px solid black;
+    color: white;
+    /* height: 100px */
+}
+
+.item-one {
+    background-color: red;
+    /* grid-column: 1 / 3; */
+    /* grid-row: 1 / 4; */
+}
+
+.item-two {
+    background-color: blue;
+}
+
+.item-three {
+    background-color: violet;
+}
+
+.item-four {
+    background-color: green;
+}
+
+.item-five {
+    background-color: rgb(119, 0, 128);
+}
+
+.item-six {
+    background-color: rgb(118, 93, 120);
+}
+
+.item-seven {
+    background-color: green;
+}
+.item-eight {
+    background-color: rgb(0, 0, 128);
+}
+
+.item-one {
+    grid-area: top-layout;
+}
+
+.item-two {
+    grid-area: footer;
+}
+
+.item-three {
+    grid-area: sidebar;
+}
+
+.item-four {
+    grid-area: content-layout;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card {
+    background-color: aqua;
+}
+
+
+
