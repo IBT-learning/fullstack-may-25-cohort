@@ -1,7 +1,14 @@
 #wrapper {
     font-size: 2em;
     gap: 1rem;
-    /* Add new properties here */
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 300px 300px;
+    border: 2px solid black;
+}
+
+#wrapper *{
+    border: 2px solid black;
 }
 
 /* Add new selectors and new CSS here */
