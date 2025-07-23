@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelishBite Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">DelishBite</div>
+        <nav class="desktop-nav">
+            <a href="#menu">Menu</a>
+            <a href="#featured">Featured</a>
+            <a href="#stores">Stores</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <!-- mobile nav -->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="#menu">Menu</a>
+            <a href="#featured">Featured</a>
+            <a href="#stores">Stores</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to DelishBite</h1>
+            <p>Your favorite Restaurant for delicious meals.</p>
+            <button>Order Now</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section" id="menu">
+        <h2>Meals Available</h2>
+        <div class="menu-cards">
+            <div class="card">
+                <img src="assets/meal.jpeg" alt="spaghetti">
+                <div class="card-body">
+                    <h3>spaghetti Bolognese</h3>
+                    <p>A classic Italian pasta with a rich meat sauce.</p>
+                    <div class="card-footer">
+                        <span>N5000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/meal.jpeg" alt="spaghetti">
+                <div class="card-body">
+                    <h3>spaghetti Bolognese</h3>
+                    <p>A classic Italian pasta with a rich meat sauce.</p>
+                    <div class="card-footer">
+                        <span>N5000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/meal.jpeg" alt="spaghetti">
+                <div class="card-body">
+                    <h3>spaghetti Bolognese</h3>
+                    <p>A classic Italian pasta with a rich meat sauce.</p>
+                    <div class="card-footer">
+                        <span>N5000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/meal.jpeg" alt="spaghetti">
+                <div class="card-body">
+                    <h3>spaghetti Bolognese</h3>
+                    <p>A classic Italian pasta with a rich meat sauce.</p>
+                    <div class="card-footer">
+                        <span>N5000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/meal.jpeg" alt="spaghetti">
+                <div class="card-body">
+                    <h3>spaghetti Bolognese</h3>
+                    <p>A classic Italian pasta with a rich meat sauce.</p>
+                    <div class="card-footer">
+                        <span>N5000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/meal.jpeg" alt="spaghetti">
+                <div class="card-body">
+                    <h3>spaghetti Bolognese</h3>
+                    <p>A classic Italian pasta with a rich meat sauce.</p>
+                    <div class="card-footer">
+                        <span>N5000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/meal.jpeg" alt="spaghetti">
+                <div class="card-body">
+                    <h3>spaghetti Bolognese</h3>
+                    <p>A classic Italian pasta with a rich meat sauce.</p>
+                    <div class="card-footer">
+                        <span>N5000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/meal.jpeg" alt="spaghetti">
+                <div class="card-body">
+                    <h3>spaghetti Bolognese</h3>
+                    <p>A classic Italian pasta with a rich meat sauce.</p>
+                    <div class="card-footer">
+                        <span>N5000</span>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="section" id="featured">
+        <h2> Meal of the Day & Recipes</h2>
+        <div class="featured-card">
+            <h3>Chef's Special: Butter Chicken</h3>
+            <p>Indulge in our chef's special butter chicken, a great and nice meal</p>
+            <button>Order Now</button>
+        </div>
+    </section>
+
+    <!-- Stores Section-->
+    <section class="section" id="stores">
+        <h2>Our Stores Nationwide</h2>
+        <div class="grid-stores">
+            <div class="store">Lagos - Ikeja</div>
+            <div class="store">Lagos - Lekki</div>
+            <div class="store">Abuja - Wuse </div>
+            <div class="store">Port Harcourt - GRA</div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2025 Delishbite. All right reserved.</p>
+        <div class="socials">
+            <a href="https://ibtlearning.africa" target="_blank">Facebook</a>
+            <a href="https://ibtlearning.africa" target="_blank">Instagram</a>
+            <a href="https://ibtlearning.africa" target="_blank">Twitter</a>
+            <a href="https://ibtlearning.africa" target="_blank">Linkedin</a>
+
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+        hamburger.addEventListener('click', () => {mobileNav.classList.toggle('open')})
+    </script>
+</body>
+
+</html>
