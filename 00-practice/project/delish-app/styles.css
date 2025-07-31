@@ -1,13 +1,260 @@
 *{
     box-sizing: border-box;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
 }
 
 body{
-    line-height: 1.6;
+    /* line-height: 1.6; */
     color:#333;
+    margin-top: 0;
+    /* background-color: aqua; */
+    overflow: auto;
 }
 
+h1{
+    margin-top: 0;
+}
 button{
     background-color: #f4c542;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    width: 100%;
+    color: white;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #f4c542;
+}
+
+.desktop-nav a,
+.mobile-nav a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.mobile-nav{
+    display: none;
+    flex-direction: column;
+     position: absolute;
+     background-color: #333333ca;
+     top: 70px;
+     left: 0;
+     width: 100%;
+     padding: 1rem 2rem;
+     z-index: 10;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-nav.open{
+    display: none;
+}
+
+.hero{
+    height: 100vh;
+    background: url(../delish-app/images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.hero-content{
+    text-align: center;
+    color: white;
+    background-color: rgba(34, 31, 31, 0.607);
+    font-size: 20px;
+    padding: 2rem;
+}
+
+.hero button{
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.hero h1{
+    margin: 10px;
+}
+
+.hero p{
+    margin: 10px;
+    font-style: italic;
+}
+
+.section{
+    margin: 30px;
+    text-align: center;
+    /* height: 30vh; */
+}
+
+.section h2{
+    margin: 20px;
+}
+.menu-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card{
+     box-shadow: 0px 7px 8px 5px rgba(0,0,0,0.14);
+-webkit-box-shadow: 0px 7px 8px 5px rgba(0,0,0,0.14);
+-moz-box-shadow: 0px 7px 8px 5px rgba(0,0,0,0.14);
+height: 450px;
+width: 300px;
+border-radius: 10px;
+}
+
+.card img{
+     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body h3{
+    margin: 20px;
+}
+
+.card-body p{
+    margin: 10px;
+}
+
+.card span{
+    font-weight: 900;
+    
+}
+
+.card button{
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    /* margin: 20px auto; */
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.featured-card{
+    box-shadow: 0px 7px 8px 5px rgba(0,0,0,0.14);
+-webkit-box-shadow: 0px 7px 8px 5px rgba(0,0,0,0.14);
+-moz-box-shadow: 0px 7px 8px 5px rgba(0,0,0,0.14);
+width: 500px;
+margin: 0 auto;
+padding: 2rem;
+background-color: #fff8dc;
+border-radius: 5px;
+}
+
+.featured-card button{
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.div-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.st-card{
+    background-color: #f4f4f4;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow:  0 1px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    text-align: left;
+}
+
+footer{
+    background-color: #060606e5;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    height: 20vh;
+}
+
+footer a{
+    color: #f4c542;
+    text-decoration: none;
+    margin: 30px 10px;
+      font-weight: 700;
+}
+
+footer p{
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero{
+        height: 80vh;
+    }
+    .desktop-nav{
+        display: none;
+    }
+
+    .mobile-nav.open{
+        display: flex;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+    .menu-card{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .featured-card{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .div-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        height: auto;
+    }
+    
 }

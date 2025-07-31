@@ -1,9 +1,12 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>DelishBite Restaurant</title>
 </head>
 <body>
@@ -11,18 +14,18 @@
         <div class="logo">
             DelishBite
         </div>
-        <nav>
-            <a href="#menu">Menu</a>
+        <nav class="desktop-nav">
+           <a href="#menu">Menu</a>
             <a href="#features">Featured</a>
-            <a href="#Stores"></a>
-            <a href="#Contact"></a>
+            <a href="#Stores">Stores</a>
+            <a href="#Contact">Contact</a>
         </nav>
-        <div class="hamburger" id="hamburger">&</div>
-        <nav class="mobile-nav">
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <nav class="mobile-nav" id="mobileNav">
             <a href="#menu">Menu</a>
             <a href="#features">Featured</a>
-            <a href="#Stores"></a>
-            <a href="#Contact"></a>
+            <a href="#Stores">Stores</a>
+            <a href="#Contact">Contact</a>
         </nav>
     </header>
     <section class="hero">
@@ -37,7 +40,7 @@
         <h2>Meals Available</h2>
         <div class="menu-card">
         <div class="card">
-            <img src="" alt="spaghetti">
+            <img src="./images/spaghetti.jpg" alt="spaghetti">
             <div class="card-body">
                 <h3>Spaghetti Bolognese</h3>
                 <p>A classic Italian pasta with a rich meat sauce</p>
@@ -49,7 +52,7 @@
             
         </div>
         <div class="card">
-            <img src="" alt="spaghetti">
+            <img src="./images/spaghetti.jpg" alt="spaghetti">
             <div class="card-body">
                 <h3>Spaghetti Bolognese</h3>
                 <p>A classic Italian pasta with a rich meat sauce</p>
@@ -61,7 +64,7 @@
             
         </div>
         <div class="card">
-            <img src="" alt="spaghetti">
+            <img src="./images/spaghetti.jpg" alt="spaghetti">
             <div class="card-body">
                 <h3>Spaghetti Bolognese</h3>
                 <p>A classic Italian pasta with a rich meat sauce</p>
@@ -73,7 +76,7 @@
             
         </div>
         <div class="card">
-            <img src="" alt="spaghetti">
+            <img src="./images/spaghetti.jpg" alt="spaghetti">
             <div class="card-body">
                 <h3>Spaghetti Bolognese</h3>
                 <p>A classic Italian pasta with a rich meat sauce</p>
@@ -85,7 +88,7 @@
             
         </div>
         <div class="card">
-            <img src="" alt="spaghetti">
+            <img src="./images/spaghetti.jpg" alt="spaghetti">
             <div class="card-body">
                 <h3>Spaghetti Bolognese</h3>
                 <p>A classic Italian pasta with a rich meat sauce</p>
@@ -97,7 +100,7 @@
             
         </div>
         <div class="card">
-            <img src="" alt="spaghetti">
+            <img src="./images/spaghetti.jpg" alt="spaghetti">
             <div class="card-body">
                 <h3>Spaghetti Bolognese</h3>
                 <p>A classic Italian pasta with a rich meat sauce</p>
@@ -119,6 +122,31 @@
             <button>Order Now</button>
         </div>
     </section>
+    <section class="section" id="Stores">
+        <h2>Our Stores Nationwide</h2>
+        <div class="div-row">
+            <div class="st-card">Lagos-Ikeja</div>
+            <div class="st-card">Lagos-Lekki</div>
+            <div class="st-card">Abuja-Wuse</div>
+            <div class="st-card">Port Harcourt-GRA</div>
+        </div>
+        
+    </section>
 
+    <footer id="Contact">
+        <p>&copy; 2025 Delishbite. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://ibtlearning.africa/" target="_blank">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+        hamburger.addEventListener('click', () => {mobileNav.classList.toggle('open')});
+    </script>
 </body>
 </html>
