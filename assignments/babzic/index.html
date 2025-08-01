@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delishbite Restaurant</title>
+    <title>Babzicbite Restaurant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">Delishbite</div>
+        <div class="logo">Babzicbite</div>
         <nav class="desktop-nav">
             <a href="#menu">Menu</a>
             <a href="#featured">Featured</a>
@@ -16,7 +16,7 @@
             <a href="#contact">Contact</a>
         </nav>
     <!-- mobile nav -->
-     <div class="hamburger" id="hamburger"></div>
+     <div class="hamburger" id="hamburger">&#9776;</div>
         <nav class="mobile-nav" id="mobileNav">
             <a href="#menu">Menu</a>
             <a href="#featured">Featured</a>
@@ -27,7 +27,7 @@
     <!--Hero section-->
     <section class="hero">
       <div class="hero-content">
-        <h1>Welcome to Delishbite</h1>
+        <h1>Welcome to Babzicbite</h1>
         <p>Your favorite Restaurant for delicious meals</p>
         <button>Order Now</button>
      </div>
@@ -51,10 +51,22 @@
     </div>
  
      <div class="card">
-            <img src="assets/meal.jpeg" alt="spaghetti">
+            <img src="assets/fried.jpeg" alt="fried rice">
         <div class="card-body">
-            <h3>Spaghetti Bolognese</h3>
-            <p>A Tasty Italian Pasta rich in sauce</p>
+            <h3>Fried Rice</h3>
+            <p>A Delicious Nigerian Fried Rice with Chicken</p>
+            <div class="card-footer">
+                <span>N5000</span>
+                <button>Buy Now</button>
+            </div>
+       </div>
+    </div>
+
+     <div class="card">
+            <img src="assets/jollof.jpeg" alt="jollof rice">
+        <div class="card-body">
+            <h3>Jollof Rice</h3>
+            <p>A Spicy and Flavorful Jollof Rice</p>
             <div class="card-footer">
                 <span>N4500</span>
                 <button>Buy Now</button>
@@ -63,34 +75,22 @@
     </div>
 
      <div class="card">
-            <img src="assets/meal.jpeg" alt="spaghetti">
+            <img src="assets/maca.jpeg" alt="macaroni">
         <div class="card-body">
-            <h3>Spaghetti Bolognese</h3>
-            <p>A Tasty Italian Pasta rich in sauce</p>
+            <h3>Macaroni</h3>
+            <p>A Sweet Macaroni Dish </p>
             <div class="card-footer">
-                <span>N4500</span>
+                <span>N3500</span>
                 <button>Buy Now</button>
             </div>
        </div>
     </div>
 
      <div class="card">
-            <img src="assets/meal.jpeg" alt="spaghetti">
+            <img src="assets/ofada.jpeg" alt="ofada rice">
         <div class="card-body">
-            <h3>Spaghetti Bolognese</h3>
-            <p>A Tasty Italian Pasta rich in sauce</p>
-            <div class="card-footer">
-                <span>N4500</span>
-                <button>Buy Now</button>
-            </div>
-       </div>
-    </div>
-
-     <div class="card">
-            <img src="assets/meal.jpeg" alt="spaghetti">
-        <div class="card-body">
-            <h3>Spaghetti Bolognese</h3>
-            <p>A Tasty Italian Pasta rich in sauce</p>
+            <h3>Ofada Rice</h3>
+            <p>A Traditional Nigerian Ofada Rice with Ayamase Sauce</p>
             <div class="card-footer">
                 <span>N4500</span>
                 <button>Buy Now</button>
@@ -100,10 +100,10 @@
 
     
     <div class="card">
-            <img src="assets/meal.jpeg" alt="spaghetti">
+            <img src="assets/semo.jpeg" alt="semo">
         <div class="card-body">
-            <h3>Spaghetti Bolognese</h3>
-            <p>A Tasty Italian Pasta rich in sauce</p>
+            <h3>Semo and Egusi</h3>
+            <p>A Rich Semo served with Egusi Soup</p>
             <div class="card-footer">
                 <span>N4500</span>
                 <button>Buy Now</button>
@@ -112,11 +112,11 @@
     </div>
 
      <div class="card">
-            <img src="assets/meal.jpeg" alt="spaghetti">
+            <img src="assets/amala.jpeg" alt="amala">
         <div class="card-body">
-            <h3>Spaghetti Bolognese</h3>
-            <p>A Tasty Italian Pasta rich in sauce</p>
-            <div class="card-footer">
+            <h3>Amala and Ewedu</h3>
+            <p>A Traditional Yoruba Dish of Amala served with Ewedu and Gbegiri Soup</p>
+           <div class="card-footer">
                 <span>N4500</span>
                 <button>Buy Now</button>
             </div>
@@ -124,10 +124,10 @@
     </div>
 
      <div class="card">
-            <img src="assets/meal.jpeg" alt="spaghetti">
+            <img src="assets/banga.jpeg" alt="banga">
         <div class="card-body">
-            <h3>Spaghetti Bolognese</h3>
-            <p>A Tasty Italian Pasta rich in sauce</p>
+            <h3>Starch and Banga soup</h3>
+            <p>A Delicious Starch served with Banga Soup</p>
             <div class="card-footer">
                 <span>N4500</span>
                 <button>Buy Now</button>
@@ -160,7 +160,7 @@
    
 
         <footer id="contact">
-            <p>&copy; 2025 Delishbite. All right reserved.</p>
+            <p>&copy; 2025 Babzicbite. All right reserved.</p>
             <div class="socials">
                 <a href="https://www.ibtlearning.africa" target="_blank">Facebook</a>
                 <a href="https://www.ibtlearning.africa" target="_blank">Instagram</a>
@@ -168,5 +168,12 @@
                 <a href="https://www.ibtlearning.africa" target="_blank">LinkedIn</a>
             </div>
         </footer>
+
+        <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+        hamburger.addEventListener('click', () => {mobileNav.classList.toggle('open')})
+    </script>
+
 </body>
 </html>
