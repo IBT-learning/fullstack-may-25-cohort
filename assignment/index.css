@@ -1,0 +1,285 @@
+body {
+  background-color: rgb(247, 245, 245);
+  padding-bottom: 300px;
+  font-family: Roboto, Arial, sans-serif;
+  margin-bottom: 100px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+  background-image: url("assets/hero-section/bg-3.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+
+  /* padding: 2rem; */
+}
+
+.kdc {
+  background-color: black;
+  text-align: center;
+  padding: 1rem 6rem;
+  opacity: 0.8;
+  border: 1px solid wheat;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.8);
+  max-width: 40;
+}
+
+
+.kdc h1, h2, p {
+ margin: 0;
+}
+
+.kdc h1 {
+  font-size: 4rem;
+  letter-spacing: 10px;
+}
+
+.kdc h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  word-spacing: 6px;
+}
+
+.kdc p {
+  font-size: 1.2rem;
+}
+
+.kdc button {
+  padding: 0.8rem 2rem;
+  background-color: wheat;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:black;
+  box-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.9);
+}
+
+.kdc button:hover {
+ opacity: 0.8;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.nav-1 {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(16, 16, 16);
+  color: rgb(245, 243, 243);
+}
+
+.left-section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.left-section a:nth-child(1):hover{
+  background-color: rgb(71, 68, 68);
+  padding: 45px 24px;
+}
+
+.left-section a:nth-child(2):hover {
+  background-color: rgb(71, 68, 68);
+  padding: 45px 12px;
+}
+
+.left-section a:nth-child(3):hover {
+  background-color: rgb(71, 68, 68);
+  padding: 45px 24px;
+}
+
+.middle-section {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 150px;
+}
+
+
+
+.middle-section button{
+  height: 45px;
+  width: 100px;
+  margin-left: -2px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border: none;
+  background-color: rgb(148, 147, 147);
+}
+
+
+
+.middle-section input {
+  border: 1px solid #ccc;
+  min-width: 150px;
+  max-width: 500px;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.middle-section input::placeholder {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.middle-section input:focus {
+  outline: 0.5px solid white;
+}
+
+.right-section {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-right: 20x;
+}
+
+.right-section a:last-child {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;  
+}
+
+.nav-2 {
+  background-color: rgb(71, 68, 68);
+  display: flex;
+  height: 50px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav-2 div:nth-child(1), .nav-2 div:last-child {
+ margin-left: 20px;
+}
+
+.nav-2 div:last-child {
+ margin-right: 20px;
+}
+
+
+.search-icon-3 {
+  width: 44px;
+  border-radius: 22px;
+  background-color: rgb(148, 147, 147);
+}
+
+.wears-1 {
+  margin-top: 20px;
+
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: rgb(75, 71, 71);
+  column-gap: 10px;
+  row-gap: 38px;
+  line-height: 1.3rem;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 8px;
+  
+}
+
+.price {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.price p {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(161, 122, 24);
+}
+
+
+.price button {
+  padding: 7px 30px;
+  background-color: gray;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(161, 122, 24);
+  cursor: pointer;
+}
+
+
+.price button:hover {
+  opacity: 0.7;
+}
+
+.card > div {
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.product-description {
+  /* text-align: center; */
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.quantity {
+  font-size: 14px;
+}
