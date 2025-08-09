@@ -1,8 +1,8 @@
 body {
   background-color: rgb(247, 245, 245);
-  padding-bottom: 300px;
+  /* padding-bottom: 300px; */
   font-family: Roboto, Arial, sans-serif;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 * {
@@ -205,11 +205,6 @@ a {
   background-color: rgb(148, 147, 147);
 }
 
-.wears-1 {
-  margin-top: 20px;
-
-}
-
 .card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -282,4 +277,49 @@ h3 {
 
 .quantity {
   font-size: 14px;
+}
+
+.wears-1 h2 {
+  color: rgb(161, 122, 24);
+  font-size: 2rem;
+  font-style: normal;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  line-height: 3rem;
+}
+.wears-1 {
+ margin-top: 70px;
+}
+
+/* FOOTER */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #101010;
+  color: white;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  color: wheat;
+  margin-bottom: 15px;
+}
+
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+  color: wheat;
 }
