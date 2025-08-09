@@ -297,14 +297,16 @@ h3 {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 40px 20px;
+  flex-wrap: nowrap;
+  padding: 40px 5px;
   background-color: #101010;
   color: white;
+  margin-top: 50px;
 }
 
 .footer-column {
-  flex: 1;
+  max-width: 300px;
+  min-width: 100px;
   margin: 10px;
 }
 
@@ -322,4 +324,8 @@ h3 {
 
 .footer-column a:hover {
   color: wheat;
+}
+
+.footer-container .footer-column:first-child {
+  margin-left: 20px;
 }
