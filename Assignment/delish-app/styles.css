@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+   
     
 }
 
@@ -113,8 +113,11 @@ header{
     margin: 20px;
 }
 .menu-card{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     gap: 2rem;
 }
 
