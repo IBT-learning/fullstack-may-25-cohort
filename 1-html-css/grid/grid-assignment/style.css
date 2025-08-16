@@ -1,6 +1,6 @@
 #wrapper {
     font-size: 2em;
-    gap: 1rem;
+    /* gap: 1rem; */
     display: grid;
     grid-template-columns: repeat(200px, minmax(200px, 1fr));
     grid-template-rows: 100px 300px 200px;
@@ -10,6 +10,10 @@
 }
 
 #header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+/* #header{
     grid-area: header ;
     
 }
@@ -28,7 +32,7 @@
 
 #footer{
     grid-area: footer ;
-}
+} */
 
 
 /* Add new selectors and new CSS here */
@@ -38,6 +42,7 @@
     background-color: #ddd;
     min-height: 15vh;
     padding: 0.5em;
+    border: 2px solid black;
 }
 
 /* article {
