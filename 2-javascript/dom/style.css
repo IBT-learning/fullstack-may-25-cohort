@@ -1,0 +1,14 @@
+.item {
+    background-color: blue;
+}
+
+.main-container {
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+.toggle-color {
+    color: red;
+}
+
