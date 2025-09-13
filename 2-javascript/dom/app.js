@@ -9,6 +9,8 @@ const navList = document.querySelector(".nav-list");
 const addElem = document.getElementById("add-elem");
 const removeElem = document.querySelector("#remove-elem");
 const home = document.getElementById("home");
+const attrContainer = document.querySelector(".attr-section");
+const attrBtn = document.querySelector("#attr-btn");
 
 function addClass(){
     main.classList.add("main-container")
@@ -43,9 +45,16 @@ const removeNavItem = () => {
     btn.removeEventListener("click", changeNavStyle)
 }
 
+const changeAttrSectionStyle = () => {
+    // attrContainer.setAttribute("class", "attr-section kit");
+    attrContainer.removeAttribute("id")
+}
+
 btn.addEventListener("click", changeNavStyle);
 addElem.addEventListener("click", addNavItem);
 removeElem.addEventListener("click", removeNavItem);
+
+attrBtn.addEventListener("click", changeAttrSectionStyle)
 
 
 // removeElem.onclick = removeNavItem
