@@ -1,0 +1,25 @@
+.item {
+    background-color: blue;
+}
+
+.main-container {
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+.toggle-color {
+    color: red;
+}
+
+#attr-id {
+    margin: 20px auto;
+    max-width: 500px;
+    height: 30vh;
+    background-color: blueviolet;
+}
+
+/* #attr-id {
+
+} */
+
